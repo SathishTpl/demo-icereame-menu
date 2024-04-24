@@ -1,0 +1,383 @@
+.menu-template {
+    background-image: url('../assets/images/BACKGROUND.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9rem 0 9rem 0;
+
+    .menu-inner-card {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFFFFF;
+        padding-bottom: 5rem;
+        position: relative;
+        overflow: hidden;
+
+        .leftLeaf {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .rightLeaf {
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            width: 115px;
+            height: 115px;
+
+        }
+
+        .resturant_name {
+            background-color: #CB82A5;
+            width: max-content;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-left: 15px solid white;
+                border-top: 10px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0px;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-right: 15px solid white;
+                border-top: 10px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+
+            span {
+                font-family: Inter;
+                font-size: 19px;
+                font-weight: 400;
+                color: white;
+                line-height: 9.68px;
+                text-align: left;
+            }
+        }
+
+        .menu-title {
+            color: #F3C152;
+        }
+
+        .menu-heading {
+            font-weight: 400;
+            color: #8F4F6C;
+        }
+
+        .glass-icon {
+            width: 180px;
+            height: 400px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .glass-icon-2 {
+            width: 145px;
+            height: 225px;
+            position: absolute;
+            top: 220px;
+            /* bottom: 0; */
+            right: 105px;
+        }
+
+        .grass-icon {
+            width: 250px;
+            height: 215px;
+            position: absolute;
+            display: block;
+            bottom: -16px;
+            left: -6px;
+        }
+
+        .grass-icon-2 {
+            width: 170px;
+            height: 165px;
+            position: absolute;
+            display: block;
+            bottom: -23px;
+            left: 180px;
+        }
+    }
+
+    .first-content-wrapper {
+        border: 4px solid #8F4F6C;
+        border-radius: 10px;
+
+        .price {
+            border-radius: 50%;
+            border: 2px solid #F3C152;
+            color: #F3C152;
+            font-size: 22px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .item-icon {
+            width: 65px;
+            height: 75px;
+        }
+
+        .menu-list-item {
+            font-weight: 400;
+            color: #8F4F6C;
+        }
+
+        .item-desc {
+            line-height: 16px;
+            color: #CB82A5;
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .menu-template {
+
+        .menu-inner-card {
+            max-width: 820px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            padding-bottom: 5rem;
+            position: relative;
+
+            .grass-icon {
+                display: none;
+            }
+
+            .grass-icon-2 {
+                display: none;
+            }
+
+            .glass-icon-2 {
+
+                right: 85px;
+            }
+
+            .first-content-wrapper {
+                border: 4px solid #8F4F6C;
+                border-radius: 10px;
+
+                .price {
+                    border-radius: 50%;
+                    border: 2px solid #F3C152;
+                    color: #F3C152;
+                    font-size: 22px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .item-icon {
+                    width: 70px;
+                    height: 90px;
+                }
+
+                .menu-list-item {
+                    font-weight: 400;
+                    color: #8F4F6C;
+                }
+
+                .item-desc {
+                    line-height: 15px;
+                    color: #CB82A5;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 567px) {
+    .menu-template {
+        padding: 6rem 0 6rem 0;
+
+        .menu-inner-card {
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            padding-bottom: 5rem;
+            position: relative;
+
+            .second-col {
+                margin-top: 25rem;
+            }
+
+            .leftLeaf {
+                width: 80px;
+                height: 80px;
+            }
+
+
+            .rightLeaf {
+                width: 95px;
+                height: 95px;
+
+            }
+
+            .grass-icon {
+                display: none;
+            }
+
+            .grass-icon-2 {
+                display: none;
+            }
+
+            .glass-icon {
+                width: 150px;
+                height: 340px;
+                position: absolute;
+                top: 50px;
+                left: 185px;
+            }
+
+            .glass-icon-2 {
+                width: 110px;
+                height: 180px;
+                position: absolute;
+                top: 205px;
+                /* bottom: 0; */
+                left: 280px;
+                right: 130px;
+            }
+
+            .first-content-wrapper {
+                border: 4px solid #8F4F6C;
+                border-radius: 10px;
+
+                .price {
+                    border-radius: 50%;
+                    border: 2px solid #F3C152;
+                    color: #F3C152;
+                    font-size: 22px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .item-icon {
+                    width: 50px;
+                    height: 70px;
+                }
+
+                .menu-list-item {
+                    font-weight: 400;
+                    color: #8F4F6C;
+                }
+
+                .item-desc {
+                    line-height: 13px;
+                    color: #CB82A5;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .menu-template {
+        padding: 4rem 0 4rem 0;
+
+        .menu-inner-card {
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            padding-bottom: 4rem;
+            position: relative;
+
+            .second-col {
+                margin-top: 25rem;
+            }
+
+            .leftLeaf {
+                width: 80px;
+                height: 80px;
+            }
+
+            .rightLeaf {
+                width: 95px;
+                height: 95px;
+
+            }
+
+            .grass-icon {
+                display: none;
+            }
+
+            .grass-icon-2 {
+                display: none;
+            }
+
+            .glass-icon {
+                width: 150px;
+                height: 340px;
+                position: absolute;
+                top: 50px;
+                left: 100px;
+            }
+
+            .glass-icon-2 {
+                width: 110px;
+                height: 180px;
+                position: absolute;
+                top: 205px;
+                /* bottom: 0; */
+                left: 195px;
+            }
+
+            .first-content-wrapper {
+                border: 4px solid #8F4F6C;
+                border-radius: 10px;
+
+                .price {
+                    border-radius: 50%;
+                    border: 2px solid #F3C152;
+                    color: #F3C152;
+                    font-size: 22px;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .item-icon {
+                    width: 50px;
+                    height: 70px;
+                }
+
+                .menu-list-item {
+                    font-weight: 400;
+                    color: #8F4F6C;
+                }
+
+                .item-desc {
+                    line-height: 13px;
+                    color: #CB82A5;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
