@@ -1,5 +1,4 @@
 import './assets/_style.scss'
-import IcecreateCopy from './components/IcecreateCopy';
 import MenuTemplate from "./components/IcecreateTemplate";
 
 
